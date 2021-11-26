@@ -1,4 +1,6 @@
 git clone https://github.com/peterzhangon/Final410.git
+gunicorn server:app -b 127.0.0.1:8095
+sudo apt-get install python-pip
 
 pip install aniso8601==4.1.0
 pip install asn1crypto==0.24.0
