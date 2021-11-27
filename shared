@@ -7,6 +7,14 @@ sudo apt-get install python-pip
 # Python 2 and Python 3 have been both installed.
 # Use the following to switch the default python to be python 2
 https://www.fosslinux.com/39384/switching-between-python-2-and-3-versions-on-ubuntu-20-04.htm
+
+# Remove python 3 to make it simple
+https://gist.github.com/zhensongren/811dcf2471f663ed3148a272f1faa957
+
+# Install pip 2, but this step cannot be passed on Ubunto 20, so have to  install pip 3 instead.
+# curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+# python get-pip.py
+sudo apt-get install python3-pip
 # ======================= Nov. 27 end ==============
 
 pip install aniso8601==4.1.0
