@@ -15,6 +15,11 @@ https://gist.github.com/zhensongren/811dcf2471f663ed3148a272f1faa957
 # curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
 # python get-pip.py
 sudo apt-get install python3-pip
+
+# ------ install ubuntu on desktop directly
+Go to micrsoft store, and search ubuntu, and install it
+https://www.youtube.com/watch?v=X-DHaQLrBi8
+cd /mnt/c
 # ======================= Nov. 27 end ==============
 
 pip install aniso8601==4.1.0
