@@ -2,6 +2,21 @@ git clone https://github.com/peterzhangon/Final410.git
 gunicorn server:app -b 127.0.0.1:8095
 sudo apt-get install python-pip
 
+# ------ install ubuntu on desktop directly
+Go to micrsoft store, and search ubuntu, and install it
+https://www.youtube.com/watch?v=X-DHaQLrBi8
+cd /mnt/c
+
+sudo apt-get update
+sudo apt install python
+sudo apt install python-pip
+sudo apt install gunicorn
+pip install flask
+pip install metapy
+pip install requests
+
+gunicorn server:app -b 127.0.0.1:8095
+
 # ======================= Nov. 27 begin ==============
 # Set up Ubunto VM using virtual box 
 # Python 2 and Python 3 have been both installed.
@@ -16,12 +31,11 @@ https://gist.github.com/zhensongren/811dcf2471f663ed3148a272f1faa957
 # python get-pip.py
 sudo apt-get install python3-pip
 
-# ------ install ubuntu on desktop directly
-Go to micrsoft store, and search ubuntu, and install it
-https://www.youtube.com/watch?v=X-DHaQLrBi8
-cd /mnt/c
+
 # ======================= Nov. 27 end ==============
 
+# -------------------
+# ------------------
 pip install aniso8601==4.1.0
 pip install asn1crypto==0.24.0
 pip install Authlib==0.10
