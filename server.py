@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template, request, jsonify
+from flask_cors import CORS
 import json
 import os
 import metapy
@@ -10,6 +11,7 @@ import re
 
 
 app = Flask(__name__) 
+cors = CORS(app)
 environ = 'development'
 dataconfig = json.loads(open("config.json", "r").read())
 app.dataenv = dataconfig[environ]
