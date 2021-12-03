@@ -16,8 +16,14 @@ var docDiv = (doc) => {
     const fac_name = doc[5]
     const fac_url = doc[6]
     const loc = doc[7]+', '+doc[8]
-
-
+    phone = doc[9]
+    if (phone =='None') {
+        phone = ''
+    } else {
+        phone = 'Phone:' + phone
+    }
+    console.log("Phone info:")
+    console.log(phone)
 
     if (email =='None') {
         return (
@@ -27,6 +33,7 @@ var docDiv = (doc) => {
 
         
                  <b style="font-size:14pt">${fac_name}</b>
+                 <b style="margin-left:auto;color:black;margin-right:30px;">${phone}</b>
                  <a style="margin-left:auto;color:black;" href=${fac_url} target="_blank"><i class="material-icons">launch</i></a>
                  </div>
 
@@ -57,6 +64,7 @@ var docDiv = (doc) => {
 
         
                  <b style="font-size:14pt">${fac_name}</b>
+                 <b style="margin-left:auto;color:black;margin-right:30px;">${phone}</b>
                  <a style="margin-left:auto;color:black;margin-right:20px;" href='mailto:${email}' "><i class="material-icons">email</i></a>
                  <a style="color:black;" href=${fac_url} target="_blank"><i class="material-icons">launch</i></a>
                  </div>
