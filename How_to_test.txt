@@ -1,0 +1,11 @@
+Please preprocess first:
+./preprocess.sh 6524
+
+Step 1: Select a txt to test
+Step 2: Find the txt file id
+Step 3: Open the txt file
+Step 4: Change the phone number
+Step 5: Preprocess the txt files again. You need to specify the max txt file id as 6524
+Step 6: Run the preprocess script ./preprocess.sh 6524
+Step 7: Start web service
+Step 8: You can find the number has been changed.
