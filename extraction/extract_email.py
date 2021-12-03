@@ -1,14 +1,15 @@
-import os,codecs,re
+import os,sys,codecs,re
 
-def main(dir_,out_path):
+def main(dir_, out_path, max_file_no):
 	emails = []
-	for i in range(len(os.listdir(dir_))-1):
+	for i in range(max_file_no + 1):
 		fileName = os.path.join(dir_,str(i)+'.txt')
-		print("File: {0}".format(os.path.abspath(fileName)))
+		if (i == 0 or i == max_file_no):
+			print("File: {0}".format(os.path.abspath(fileName)))
 		if (not os.path.exists(fileName)):
+			emails.append('')
 			continue
-		print("Begin to proess {0}".format(os.path.abspath(os.path.join(dir_,str(i)+'.txt'))))
-		content = codecs.open(fileName), 'r',encoding='utf-8',errors='ignore').readline()
+		content = codecs.open(fileName, 'r',encoding='utf-8',errors='ignore').readlines()
 		for line in content:
 			match = re.findall(r'[\w\.-]+@[\w\.-]+', line)
 			if len(match) > 0:
@@ -29,7 +30,8 @@ if __name__ == '__main__':
 	cwd = os.getcwd()
 
 	# Print the current working directory
-	print("Current working directory: {0}".format(cwd))
-	print("Current working directory: {0}".format(os.path.abspath("../data/compiled_bios/")))
-	print("Current working directory: {0}".format(os.path.abspath("../data/emails")))
-	main('../data/compiled_bios/','../data/emails')
+	# print("Current working directory: {0}".format(cwd))
+	print("\nBegin to process emails, the source is at: {0}".format(os.path.abspath("../data/compiled_bios/")))
+	print("The destination is at : {0}".format(os.path.abspath("../data/emails")))
+	max_file_no = int(sys.argv[1])
+	main('../data/compiled_bios/','../data/emails', max_file_no)
