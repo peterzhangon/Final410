@@ -24,7 +24,7 @@ pip install requests
 
 # Part-4: To clone the code via git bash on windows or via terminal on Ubunto
 # =========================================
-# We may put codes in fixed location, so we can access the code via Ubuto and Windows
+# We may put codes in fixed location, so we can access the code via Ubuntu and Windows
 #
 
 # The directory on Ubunto
