@@ -73,8 +73,7 @@ def search():
     num_results = data['num_results']
     selected_loc_filters = data['selected_loc_filters']
     selected_uni_filters = data['selected_uni_filters']
-    print("peter: querytext: ", querytext)
-    print("peter: num_results: ", num_results)
+
     query = metapy.index.Document()
     query.content(querytext)
     min_score = 0.01
@@ -118,7 +117,6 @@ def search():
     print("\n\n docs[0]:", docs[0])
     print("\n\n docs[1]:", docs[1])
     print("\n\n docs[2]:", docs[2])
-    print("peter: server.py end /search line 66")
 
     return jsonify({
         "docs": docs
