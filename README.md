@@ -15,7 +15,6 @@
 
 # Part-3: To install packages on Ubunto
 
-*
 - sudo apt-get update
 - sudo apt install python
 - sudo apt install python-pip
@@ -27,7 +26,6 @@
 # Part-4: To clone the code via git bash on windows or via terminal on Ubunto
 
 * We may put codes in fixed location, so we can access the code via Ubuntu and Windows
-*
 
 ## The directory on Ubunto
 - cd /mnt/c/code
@@ -38,9 +36,8 @@
 # Part-5: pip list results
 
 * If you cannot start web service and query via web page, you may check the required packages have been installed or not.
- 
 
-- peter@LAPTOP-MSKOE3G5:/mnt/c/peter/code/Final410$ pip list
+- pip list
 - asn1crypto (0.24.0)
 - certifi (2021.10.8)
 - chardet (4.0.0)
@@ -73,24 +70,18 @@
  
 # Part-6: Source code location:
 
-*
-https://github.com/peterzhangon/Final410
+- https://github.com/peterzhangon/Final410
 
 
 # Part-7: To clone the code:
 
-*
 https://github.com/peterzhangon/Final410
 
 
 # Part-8: To start web service
-
-
 - gunicorn server:app -b 127.0.0.1:8095
 
 
 # Part-9: To open the web page
-
-
 
 - The site should be available at http://localhost:8095/
