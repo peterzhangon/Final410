@@ -75,7 +75,7 @@
 
 # Part-7: To clone the code:
 
-https://github.com/peterzhangon/Final410
+- https://github.com/peterzhangon/Final410
 
 
 # Part-8: To start web service
