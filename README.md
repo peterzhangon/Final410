@@ -25,7 +25,7 @@
 
 # Part-4: To clone the code via git bash on windows or via terminal on Ubunto
 
-* We may put codes in fixed location, so we can access the code via Ubuntu and Windows
+We may put codes in fixed location, so we can access the code via Ubuntu and Windows
 
 ## The directory on Ubunto
 - cd /mnt/c/code
@@ -35,7 +35,7 @@
 
 # Part-5: pip list results
 
-* If you cannot start web service and query via web page, you may check the required packages have been installed or not.
+If you cannot start web service and query via web page, you may check the required packages have been installed or not.
 
 - pip list
 - asn1crypto (0.24.0)
